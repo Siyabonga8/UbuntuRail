@@ -1,32 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About - Ubuntu Rail</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Ubuntu Rail Solutions</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      width:100%;
+      background:#02142b;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      color:#fff;
+      font-size:32px;
+      font-weight:bold;
+    }
+
+    .logo span{
+      color:#f4b400;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:40px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#f4b400;
+    }
+
+    /* HERO SECTION */
+
+    .about-hero{
+      height:100vh;
+
+      background:
+      linear-gradient(rgba(0,0,0,0.65),
+      rgba(0,0,0,0.65)),
+      url('images/railway-bg.jpg');
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+
+      padding:0 20px;
+      color:white;
+    }
+
+    .about-content{
+      max-width:900px;
+    }
+
+    .about-content h1{
+      font-size:64px;
+      margin-bottom:30px;
+    }
+
+    .about-content p{
+      font-size:22px;
+      line-height:1.8;
+      margin-bottom:20px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:14px 35px;
+      background:#f4b400;
+      color:#000;
+      text-decoration:none;
+      border-radius:5px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+    }
+
+  </style>
 </head>
+
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-</nav>
+  <!-- NAVBAR -->
 
-<section class="about">
-  <h1>About Ubuntu Rail Solutions</h1>
+  <nav>
 
-  <p>
-    Ubuntu Rail Solutions is a South African railway engineering company
-    specializing in railway construction, maintenance, track condition assessment,
-    RSR permit and compliance, and infrastructure support services.
-  </p>
+    <div class="logo">
+      Ubuntu <span>Rail</span>
+    </div>
 
-  <p>
-    With over 13 years of rail industry experience, we are committed to
-    delivering safe, reliable, and high-quality engineering solutions.
-  </p>
-</section>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- ABOUT HERO SECTION -->
+
+  <section class="about-hero">
+
+    <div class="about-content">
+
+      <h1>About Ubuntu Rail Solutions</h1>
+
+      <p>
+        Ubuntu Rail Solutions is a South African railway engineering company
+        specializing in railway construction, maintenance, track condition
+        assessment, RSR permit and compliance, and infrastructure support services.
+      </p>
+
+      <p>
+        With over 13 years of rail industry experience, we are committed to
+        delivering safe, reliable, and high-quality engineering solutions
+        across South Africa.
+      </p>
+
+      <a href="services.html" class="btn">
+        Explore Services
+      </a>
+
+    </div>
+
+  </section>
 
 </body>
 </html>
