@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
 
   <meta
@@ -10,12 +12,13 @@
 
   <meta
     name="description"
-    content="Ubuntu Rail Solutions provides railway consulting, asset management, safety compliance, maintenance, rehabilitation, construction and civil engineering services across South Africa."
+    content="Ubuntu Rail Solutions provides railway consulting, asset management, compliance, maintenance, rehabilitation and construction services across South Africa."
   >
 
-  <title>Services | Ubuntu Rail Solutions</title>
+  <title>Ubuntu Rail Solutions | Railway Engineering Services</title>
 
   <!-- MONTSERRAT FONT -->
+
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet"
@@ -25,7 +28,7 @@
 
     /* ==================================================
        UBUNTU RAIL SOLUTIONS
-       SERVICES PAGE
+       HOME PAGE
        ================================================== */
 
     :root {
@@ -81,12 +84,15 @@
       width: 100%;
       background: var(--primary-navy);
       padding: 20px 8%;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       position: sticky;
       top: 0;
       z-index: 1000;
+
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     }
 
@@ -109,8 +115,8 @@
 
     .desktop-nav a {
       color: var(--white);
-      font-weight: 500;
       font-size: 15px;
+      font-weight: 500;
       position: relative;
       transition: color 0.3s ease;
     }
@@ -140,11 +146,13 @@
       display: none;
       width: 45px;
       height: 42px;
+      padding: 10px;
+
+      background: transparent;
       border: 1px solid rgba(255, 255, 255, 0.25);
       border-radius: 5px;
-      background: transparent;
+
       cursor: pointer;
-      padding: 10px;
     }
 
     .menu-toggle span {
@@ -153,7 +161,6 @@
       height: 2px;
       background: var(--white);
       margin: 5px 0;
-      transition: 0.3s ease;
     }
 
     .mobile-nav {
@@ -180,65 +187,8 @@
     }
 
     /* ==================================================
-       HERO
+       BUTTONS
        ================================================== */
-
-    .hero {
-      min-height: 64vh;
-      background:
-        linear-gradient(
-          rgba(8, 17, 29, 0.78),
-          rgba(8, 17, 29, 0.78)
-        ),
-        url("images/hero.jpg");
-
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-
-      color: var(--white);
-      padding: 90px 8%;
-    }
-
-    .hero-content {
-      max-width: 950px;
-    }
-
-    .hero-tag {
-      color: var(--accent-orange);
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 14px;
-      font-weight: 700;
-      margin-bottom: 18px;
-    }
-
-    .hero h1 {
-      font-size: clamp(42px, 6vw, 72px);
-      line-height: 1.08;
-      margin-bottom: 24px;
-      font-weight: 800;
-    }
-
-    .hero p {
-      max-width: 850px;
-      margin: 0 auto 35px;
-      font-size: 19px;
-      line-height: 1.8;
-      color: var(--light-text);
-    }
-
-    .hero-buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 18px;
-    }
 
     .btn {
       display: inline-block;
@@ -246,6 +196,7 @@
       border-radius: 5px;
       font-weight: 700;
       font-size: 15px;
+
       transition:
         transform 0.3s ease,
         background 0.3s ease,
@@ -277,6 +228,69 @@
     }
 
     /* ==================================================
+       HERO
+       ================================================== */
+
+    .hero {
+      min-height: 88vh;
+
+      background:
+        linear-gradient(
+          rgba(8, 17, 29, 0.74),
+          rgba(8, 17, 29, 0.82)
+        ),
+        url("images/hero.jpg");
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      display: flex;
+      align-items: center;
+
+      padding: 100px 8%;
+      color: var(--white);
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero-tag {
+      color: var(--accent-orange);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(44px, 6vw, 75px);
+      line-height: 1.08;
+      font-weight: 800;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: var(--accent-orange);
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: var(--light-text);
+      font-size: 18px;
+      line-height: 1.9;
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    /* ==================================================
        GENERAL SECTIONS
        ================================================== */
 
@@ -289,9 +303,9 @@
     }
 
     .section-title {
-      text-align: center;
       max-width: 850px;
       margin: 0 auto 65px;
+      text-align: center;
     }
 
     .section-label {
@@ -312,8 +326,122 @@
 
     .section-title p {
       color: var(--secondary-text);
-      line-height: 1.9;
       font-size: 16px;
+      line-height: 1.9;
+    }
+
+    /* ==================================================
+       ABOUT
+       ================================================== */
+
+    .about-section {
+      background: var(--white);
+      padding: 100px 8%;
+    }
+
+    .about-wrapper {
+      max-width: 1400px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 75px;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+    }
+
+    .about-image img {
+      width: 100%;
+      min-height: 540px;
+      max-height: 630px;
+      object-fit: cover;
+
+      border-radius: 16px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .experience-box {
+      position: absolute;
+      right: -25px;
+      bottom: 35px;
+
+      width: 220px;
+      padding: 28px;
+
+      background: var(--accent-orange);
+      color: var(--primary-navy);
+
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    .experience-box strong {
+      display: block;
+      font-size: 48px;
+      line-height: 1;
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+
+    .experience-box span {
+      display: block;
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+
+    .about-content h2 {
+      color: var(--secondary-navy);
+      font-size: clamp(34px, 4vw, 47px);
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    .about-content > p {
+      color: var(--secondary-text);
+      line-height: 1.9;
+      margin-bottom: 18px;
+    }
+
+    .about-points {
+      margin: 32px 0 35px;
+    }
+
+    .about-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 17px;
+      margin-bottom: 24px;
+    }
+
+    .about-icon {
+      min-width: 35px;
+      height: 35px;
+
+      display: grid;
+      place-items: center;
+
+      background: var(--accent-orange);
+      color: var(--primary-navy);
+
+      border-radius: 50%;
+      font-weight: 800;
+      margin-top: 3px;
+    }
+
+    .about-point h3 {
+      color: var(--secondary-navy);
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+
+    .about-point p {
+      color: var(--secondary-text);
+      font-size: 14px;
+      line-height: 1.7;
     }
 
     /* ==================================================
@@ -321,22 +449,25 @@
        ================================================== */
 
     .services-grid {
+      max-width: 1450px;
+      margin: auto;
+
       display: grid;
       grid-template-columns: repeat(
         auto-fit,
-        minmax(330px, 1fr)
+        minmax(300px, 1fr)
       );
-      gap: 35px;
-      max-width: 1450px;
-      margin: auto;
+      gap: 32px;
     }
 
     .service-card {
       background: var(--white);
       border-radius: 14px;
       overflow: hidden;
-      box-shadow: var(--shadow);
+
       border: 1px solid var(--border-colour);
+      box-shadow: var(--shadow);
+
       transition:
         transform 0.4s ease,
         box-shadow 0.4s ease;
@@ -348,15 +479,16 @@
     }
 
     .service-image {
-      position: relative;
-      height: 250px;
+      height: 235px;
       overflow: hidden;
+      position: relative;
     }
 
     .service-image::after {
       content: "";
       position: absolute;
       inset: 0;
+
       background:
         linear-gradient(
           to top,
@@ -378,66 +510,51 @@
 
     .service-number {
       position: absolute;
-      bottom: 18px;
       left: 22px;
+      bottom: 18px;
       z-index: 2;
-      width: 47px;
-      height: 47px;
+
+      width: 46px;
+      height: 46px;
+
       display: grid;
       place-items: center;
-      border-radius: 50%;
+
       background: var(--accent-orange);
       color: var(--primary-navy);
+
+      border-radius: 50%;
+      font-size: 16px;
       font-weight: 800;
-      font-size: 17px;
     }
 
     .service-content {
-      padding: 32px;
+      padding: 30px;
     }
 
     .service-content h3 {
       color: var(--secondary-navy);
-      font-size: 25px;
-      line-height: 1.3;
-      margin-bottom: 16px;
+      font-size: 23px;
+      line-height: 1.35;
+      margin-bottom: 15px;
     }
 
-    .service-description {
+    .service-content p {
       color: var(--secondary-text);
+      font-size: 15px;
       line-height: 1.8;
-      margin-bottom: 23px;
-    }
-
-    .service-list {
-      margin-bottom: 25px;
-    }
-
-    .service-list li {
-      color: #4f5660;
-      font-size: 14px;
-      line-height: 1.7;
-      margin-bottom: 10px;
-      padding-left: 24px;
-      position: relative;
-    }
-
-    .service-list li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: var(--accent-orange);
-      font-weight: 800;
+      margin-bottom: 22px;
     }
 
     .service-link {
       display: inline-flex;
       align-items: center;
       gap: 8px;
+
       color: var(--secondary-navy);
-      font-weight: 700;
       font-size: 14px;
+      font-weight: 700;
+
       transition: color 0.3s ease;
     }
 
@@ -454,6 +571,11 @@
       transform: translateX(5px);
     }
 
+    .services-button {
+      text-align: center;
+      margin-top: 50px;
+    }
+
     /* ==================================================
        INFRASTRUCTURE MANAGEMENT
        ================================================== */
@@ -467,14 +589,11 @@
     .management-wrapper {
       max-width: 1400px;
       margin: auto;
+
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 65px;
       align-items: center;
-    }
-
-    .management-content .section-label {
-      margin-bottom: 15px;
     }
 
     .management-content h2 {
@@ -486,20 +605,7 @@
     .management-content p {
       color: var(--light-text);
       line-height: 1.9;
-      margin-bottom: 22px;
-    }
-
-    .management-note {
-      border-left: 4px solid var(--accent-orange);
-      padding: 18px 20px;
-      margin: 30px 0;
-      background: rgba(255, 255, 255, 0.05);
-    }
-
-    .management-note p {
-      margin: 0;
-      color: var(--white);
-      font-weight: 500;
+      margin-bottom: 20px;
     }
 
     .management-features {
@@ -507,25 +613,27 @@
       color: var(--main-text);
       border-radius: 16px;
       padding: 42px;
+
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
     }
 
     .management-features h3 {
       color: var(--secondary-navy);
-      font-size: 27px;
+      font-size: 26px;
       margin-bottom: 25px;
     }
 
     .feature-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 16px 25px;
+      gap: 16px 24px;
     }
 
     .feature-item {
       display: flex;
       align-items: flex-start;
       gap: 12px;
+
       padding-bottom: 14px;
       border-bottom: 1px solid var(--border-colour);
     }
@@ -533,67 +641,82 @@
     .feature-icon {
       min-width: 26px;
       height: 26px;
-      border-radius: 50%;
-      background: var(--accent-orange);
-      color: var(--primary-navy);
+
       display: grid;
       place-items: center;
+
+      background: var(--accent-orange);
+      color: var(--primary-navy);
+
+      border-radius: 50%;
       font-size: 13px;
       font-weight: 800;
     }
 
     .feature-item p {
       color: var(--secondary-text);
+      font-size: 14px;
       line-height: 1.6;
       margin: 0;
-      font-size: 14px;
     }
 
     /* ==================================================
-       DELIVERY PROCESS
+       WHY CHOOSE US
        ================================================== */
 
-    .process-grid {
+    .benefits-grid {
       max-width: 1300px;
       margin: auto;
+
       display: grid;
       grid-template-columns: repeat(
         auto-fit,
-        minmax(220px, 1fr)
+        minmax(240px, 1fr)
       );
-      gap: 25px;
+      gap: 28px;
     }
 
-    .process-card {
+    .benefit-card {
       background: var(--white);
-      padding: 35px 28px;
+      padding: 36px 30px;
+
       border-radius: 12px;
       border-top: 4px solid var(--accent-orange);
+
       box-shadow: var(--shadow);
     }
 
-    .process-card .process-number {
-      color: var(--accent-orange);
-      font-size: 38px;
+    .benefit-icon {
+      width: 52px;
+      height: 52px;
+
+      display: grid;
+      place-items: center;
+
+      background: var(--accent-orange);
+      color: var(--primary-navy);
+
+      border-radius: 50%;
+      font-size: 21px;
       font-weight: 800;
-      line-height: 1;
-      margin-bottom: 18px;
+
+      margin-bottom: 22px;
     }
 
-    .process-card h3 {
+    .benefit-card h3 {
       color: var(--secondary-navy);
-      font-size: 20px;
+      font-size: 21px;
       margin-bottom: 12px;
     }
 
-    .process-card p {
+    .benefit-card p {
       color: var(--secondary-text);
       font-size: 14px;
       line-height: 1.8;
     }
 
     /* ==================================================
-       CONTACT / CALL TO ACTION
+       CONTACT
        ================================================== */
 
     .contact-wrapper {
@@ -606,10 +729,12 @@
       color: var(--white);
       border-radius: 16px;
       padding: 70px;
+
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
       gap: 60px;
       align-items: center;
+
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.14);
     }
 
@@ -634,8 +759,8 @@
 
     .contact-box h3 {
       color: var(--secondary-navy);
-      margin-bottom: 26px;
       font-size: 26px;
+      margin-bottom: 26px;
     }
 
     .contact-detail {
@@ -645,9 +770,9 @@
     }
 
     .contact-detail:last-child {
-      border-bottom: none;
       margin-bottom: 0;
       padding-bottom: 0;
+      border-bottom: none;
     }
 
     .contact-detail strong {
@@ -678,6 +803,7 @@
     .footer-grid {
       max-width: 1400px;
       margin: auto;
+
       display: grid;
       grid-template-columns: 1.3fr 1fr 1fr 1fr;
       gap: 45px;
@@ -696,15 +822,15 @@
 
     footer h3 {
       color: var(--accent-orange);
-      margin-bottom: 20px;
       font-size: 18px;
+      margin-bottom: 20px;
     }
 
     footer p,
     footer a {
       color: var(--footer-text);
-      line-height: 1.8;
       font-size: 14px;
+      line-height: 1.8;
     }
 
     footer a {
@@ -724,8 +850,10 @@
     .copyright {
       max-width: 1400px;
       margin: 50px auto 0;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
+
       padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+
       text-align: center;
     }
 
@@ -747,12 +875,18 @@
         display: block;
       }
 
-      .management-wrapper {
+      .about-wrapper,
+      .management-wrapper,
+      .contact-section {
         grid-template-columns: 1fr;
       }
 
-      .contact-section {
-        grid-template-columns: 1fr;
+      .about-content {
+        max-width: 100%;
+      }
+
+      .experience-box {
+        right: 25px;
       }
 
       .footer-grid {
@@ -777,8 +911,8 @@
       }
 
       .hero {
-        min-height: 72vh;
-        padding: 80px 5%;
+        min-height: 82vh;
+        padding: 85px 5%;
       }
 
       .hero p {
@@ -791,29 +925,38 @@
       }
 
       .btn {
-        text-align: center;
         width: 100%;
+        text-align: center;
       }
 
       .section,
+      .about-section,
       .management-section {
         padding: 75px 5%;
+      }
+
+      .about-image img {
+        min-height: 360px;
+      }
+
+      .experience-box {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        width: 100%;
+        margin-top: 20px;
       }
 
       .services-grid {
         grid-template-columns: 1fr;
       }
 
-      .service-content {
-        padding: 27px 24px;
+      .feature-grid {
+        grid-template-columns: 1fr;
       }
 
       .management-features {
         padding: 30px 24px;
-      }
-
-      .feature-grid {
-        grid-template-columns: 1fr;
       }
 
       .contact-section {
@@ -836,6 +979,7 @@
     }
 
   </style>
+
 </head>
 
 <body>
@@ -846,15 +990,28 @@
 
   <header>
 
-    <a href="index.html" class="logo">
+    <a href="./index.html" class="logo">
       Ubuntu <span>Rail Solutions</span>
     </a>
 
     <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html" class="active">Services</a>
-      <a href="#contact">Contact</a>
+
+      <a href="./index.html" class="active">
+        Home
+      </a>
+
+      <a href="./about.html">
+        About
+      </a>
+
+      <a href="./services.html">
+        Services
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
     </nav>
 
     <button
@@ -864,9 +1021,11 @@
       aria-expanded="false"
       aria-controls="mobileNavigation"
     >
+
       <span></span>
       <span></span>
       <span></span>
+
     </button>
 
   </header>
@@ -876,10 +1035,23 @@
     id="mobileNavigation"
     aria-label="Mobile navigation"
   >
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html" class="active">Services</a>
-    <a href="#contact">Contact</a>
+
+    <a href="./index.html" class="active">
+      Home
+    </a>
+
+    <a href="./about.html">
+      About
+    </a>
+
+    <a href="./services.html">
+      Services
+    </a>
+
+    <a href="#contact">
+      Contact
+    </a>
+
   </nav>
 
   <!-- ==================================================
@@ -891,22 +1063,24 @@
     <div class="hero-content">
 
       <div class="hero-tag">
-        Ubuntu Rail Solutions
+        Railway Engineering Excellence
       </div>
 
       <h1>
-        Our Railway Engineering Services
+        Engineering the Future of
+        <span>Railway Infrastructure</span>
       </h1>
 
       <p>
-        Integrated railway consulting, asset management,
-        compliance, maintenance, rehabilitation and construction
-        solutions across South Africa.
+        Ubuntu Rail Solutions provides integrated railway consulting,
+        asset management, safety compliance, maintenance,
+        rehabilitation, construction and infrastructure support
+        services across South Africa.
       </p>
 
       <div class="hero-buttons">
 
-        <a href="#services" class="btn btn-primary">
+        <a href="./services.html" class="btn btn-primary">
           Explore Our Services
         </a>
 
@@ -921,7 +1095,122 @@
   </section>
 
   <!-- ==================================================
-       SERVICES INTRODUCTION
+       ABOUT
+       ================================================== -->
+
+  <section class="about-section" id="about">
+
+    <div class="about-wrapper">
+
+      <div class="about-image">
+
+        <img
+          src="images/inspection.jpeg"
+          alt="Ubuntu Rail Solutions railway infrastructure inspection"
+        >
+
+        <div class="experience-box">
+
+          <strong>13+</strong>
+
+          <span>
+            Years of Railway Industry Experience
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="about-content">
+
+        <div class="section-label">
+          About Ubuntu Rail Solutions
+        </div>
+
+        <h2>
+          Practical Railway Engineering Solutions Built on Experience
+        </h2>
+
+        <p>
+          Ubuntu Rail Solutions is a South African railway engineering
+          company specialising in railway construction, maintenance,
+          infrastructure consulting, asset management, condition
+          assessments and compliance support.
+        </p>
+
+        <p>
+          Our approach combines practical railway experience with
+          structured engineering systems to help clients maintain safe,
+          reliable and compliant railway infrastructure.
+        </p>
+
+        <div class="about-points">
+
+          <div class="about-point">
+
+            <span class="about-icon">✓</span>
+
+            <div>
+
+              <h3>Experienced Railway Team</h3>
+
+              <p>
+                Supported by experienced railway practitioners,
+                engineering personnel and skilled project teams.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="about-point">
+
+            <span class="about-icon">✓</span>
+
+            <div>
+
+              <h3>Complete Infrastructure Support</h3>
+
+              <p>
+                From inspections and compliance to maintenance,
+                rehabilitation and new railway construction.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="about-point">
+
+            <span class="about-icon">✓</span>
+
+            <div>
+
+              <h3>South African Railway Expertise</h3>
+
+              <p>
+                Solutions developed for industrial sidings, terminals,
+                freight facilities and railway infrastructure projects.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <a href="./about.html" class="btn btn-primary">
+          Learn More About Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ==================================================
+       SERVICES
        ================================================== -->
 
   <section class="section" id="services">
@@ -937,9 +1226,9 @@
       </h2>
 
       <p>
-        Ubuntu Rail Solutions supports railway operators, private
-        siding owners, industrial facilities and infrastructure
-        developers throughout the complete railway asset lifecycle.
+        We support railway operators, private siding owners,
+        industrial facilities and infrastructure developers throughout
+        the complete lifecycle of their railway assets.
       </p>
 
     </div>
@@ -954,10 +1243,12 @@
 
           <img
             src="images/inspection.jpeg"
-            alt="Railway infrastructure inspection and condition assessment"
+            alt="Railway infrastructure consulting and condition assessment"
           >
 
-          <div class="service-number">01</div>
+          <div class="service-number">
+            01
+          </div>
 
         </div>
 
@@ -967,25 +1258,14 @@
             Railway Infrastructure Consulting
           </h3>
 
-          <p class="service-description">
-            Independent engineering advice and technical support
-            to improve the safety, reliability and performance of
-            railway infrastructure.
+          <p>
+            Independent engineering advice, condition assessments,
+            feasibility studies, technical reports and railway
+            infrastructure evaluations.
           </p>
 
-          <ul class="service-list">
-            <li>Railway condition assessments</li>
-            <li>Engineering and technical reports</li>
-            <li>Technical due diligence</li>
-            <li>Feasibility studies</li>
-            <li>Track geometry evaluations</li>
-            <li>Turnout assessments</li>
-            <li>Asset verification</li>
-            <li>Independent engineering advice</li>
-          </ul>
-
-          <a href="#contact" class="service-link">
-            Request a Consultation <span>→</span>
+          <a href="./services.html" class="service-link">
+            Learn More <span>→</span>
           </a>
 
         </div>
@@ -1000,10 +1280,12 @@
 
           <img
             src="images/on track machines.jpeg"
-            alt="Railway asset management and track monitoring"
+            alt="Railway asset management and infrastructure monitoring"
           >
 
-          <div class="service-number">02</div>
+          <div class="service-number">
+            02
+          </div>
 
         </div>
 
@@ -1013,24 +1295,13 @@
             Railway Asset Management
           </h3>
 
-          <p class="service-description">
-            Helping railway and siding owners understand, monitor,
-            maintain and protect the value of their railway assets.
+          <p>
+            Digital asset registers, asset verification, infrastructure
+            health monitoring, maintenance history and lifecycle planning.
           </p>
 
-          <ul class="service-list">
-            <li>Digital asset registers</li>
-            <li>Asset identification and numbering</li>
-            <li>Asset condition monitoring</li>
-            <li>Infrastructure health reports</li>
-            <li>Maintenance history records</li>
-            <li>Asset lifecycle planning</li>
-            <li>Capital replacement planning</li>
-            <li>Technical drawings and photo registers</li>
-          </ul>
-
-          <a href="#contact" class="service-link">
-            Discuss Your Assets <span>→</span>
+          <a href="./services.html" class="service-link">
+            Learn More <span>→</span>
           </a>
 
         </div>
@@ -1045,10 +1316,12 @@
 
           <img
             src="images/inspection.jpeg"
-            alt="Railway safety audit and compliance inspection"
+            alt="Railway safety and compliance inspection"
           >
 
-          <div class="service-number">03</div>
+          <div class="service-number">
+            03
+          </div>
 
         </div>
 
@@ -1058,24 +1331,13 @@
             Railway Safety and Compliance
           </h3>
 
-          <p class="service-description">
-            Supporting railway operators and siding owners in
-            meeting safety, operational and regulatory requirements.
+          <p>
+            Railway Safety Management Systems, RSR compliance support,
+            siding audits, risk assessments and safety documentation.
           </p>
 
-          <ul class="service-list">
-            <li>Railway Safety Management Systems</li>
-            <li>RSR compliance support</li>
-            <li>Siding compliance audits</li>
-            <li>Risk assessments</li>
-            <li>Construction and maintenance safety files</li>
-            <li>Operational procedures</li>
-            <li>Emergency preparedness planning</li>
-            <li>Contractor safety management</li>
-          </ul>
-
-          <a href="#contact" class="service-link">
-            Request Compliance Support <span>→</span>
+          <a href="./services.html" class="service-link">
+            Learn More <span>→</span>
           </a>
 
         </div>
@@ -1093,36 +1355,25 @@
             alt="Railway rail replacement and track maintenance"
           >
 
-          <div class="service-number">04</div>
+          <div class="service-number">
+            04
+          </div>
 
         </div>
 
         <div class="service-content">
 
           <h3>
-            Railway Maintenance and Rehabilitation
+            Maintenance and Rehabilitation
           </h3>
 
-          <p class="service-description">
-            Planned and corrective railway maintenance services
-            designed to improve infrastructure reliability and
-            extend asset life.
+          <p>
+            Preventive maintenance, corrective repairs, rail welding,
+            sleeper replacement, turnout maintenance and track rehabilitation.
           </p>
 
-          <ul class="service-list">
-            <li>Preventive railway maintenance</li>
-            <li>Corrective railway maintenance</li>
-            <li>Emergency railway repairs</li>
-            <li>Rail and sleeper replacement</li>
-            <li>Turnout maintenance</li>
-            <li>Rail welding</li>
-            <li>Track realignment</li>
-            <li>Rail stress management</li>
-            <li>Track rehabilitation</li>
-          </ul>
-
-          <a href="#contact" class="service-link">
-            Request Maintenance Support <span>→</span>
+          <a href="./services.html" class="service-link">
+            Learn More <span>→</span>
           </a>
 
         </div>
@@ -1137,10 +1388,12 @@
 
           <img
             src="images/earthworks.jpeg"
-            alt="Railway construction, earthworks and civil engineering"
+            alt="Railway construction and civil engineering works"
           >
 
-          <div class="service-number">05</div>
+          <div class="service-number">
+            05
+          </div>
 
         </div>
 
@@ -1150,26 +1403,13 @@
             Railway Construction and Civil Works
           </h3>
 
-          <p class="service-description">
-            Professional delivery of new railway infrastructure,
-            upgrades, extensions and associated civil engineering
-            works.
+          <p>
+            New siding construction, track extensions, turnout installation,
+            track renewals, earthworks and drainage infrastructure.
           </p>
 
-          <ul class="service-list">
-            <li>New railway siding construction</li>
-            <li>Track extensions</li>
-            <li>Rail and turnout installation</li>
-            <li>Track renewals</li>
-            <li>Earthworks and formation preparation</li>
-            <li>Drainage systems</li>
-            <li>Retaining structures and gabions</li>
-            <li>Construction supervision</li>
-            <li>Testing and commissioning support</li>
-          </ul>
-
-          <a href="#contact" class="service-link">
-            Discuss Your Project <span>→</span>
+          <a href="./services.html" class="service-link">
+            Learn More <span>→</span>
           </a>
 
         </div>
@@ -1178,10 +1418,18 @@
 
     </div>
 
+    <div class="services-button">
+
+      <a href="./services.html" class="btn btn-primary">
+        View All Services
+      </a>
+
+    </div>
+
   </section>
 
   <!-- ==================================================
-       RAIL INFRASTRUCTURE MANAGEMENT
+       INFRASTRUCTURE MANAGEMENT
        ================================================== -->
 
   <section class="management-section">
@@ -1211,19 +1459,8 @@
           coordinated service.
         </p>
 
-        <div class="management-note">
-
-          <p>
-            This service gives clients a clear understanding of
-            what railway assets they own, their condition, open
-            defects, maintenance priorities and future capital
-            requirements.
-          </p>
-
-        </div>
-
-        <a href="#contact" class="btn btn-primary">
-          Discuss Infrastructure Management
+        <a href="./services.html" class="btn btn-primary">
+          Discover This Service
         </a>
 
       </div>
@@ -1268,7 +1505,7 @@
 
           <div class="feature-item">
             <div class="feature-icon">✓</div>
-            <p>Inspection photographs and galleries</p>
+            <p>Inspection photographs</p>
           </div>
 
           <div class="feature-item">
@@ -1283,7 +1520,7 @@
 
           <div class="feature-item">
             <div class="feature-icon">✓</div>
-            <p>Technical and engineering reports</p>
+            <p>Technical engineering reports</p>
           </div>
 
         </div>
@@ -1295,7 +1532,7 @@
   </section>
 
   <!-- ==================================================
-       SERVICE DELIVERY PROCESS
+       WHY CHOOSE US
        ================================================== -->
 
   <section class="section section-white">
@@ -1303,85 +1540,86 @@
     <div class="section-title">
 
       <div class="section-label">
-        Our Approach
+        Why Choose Us
       </div>
 
       <h2>
-        How We Deliver Railway Projects
+        A Reliable Railway Engineering Partner
       </h2>
 
       <p>
-        Every project is managed through a structured process that
-        supports safety, quality, technical compliance and reliable
-        project delivery.
+        Our work is guided by safety, technical quality, practical
+        railway experience and professional project delivery.
       </p>
 
     </div>
 
-    <div class="process-grid">
+    <div class="benefits-grid">
 
-      <div class="process-card">
+      <div class="benefit-card">
 
-        <div class="process-number">01</div>
+        <div class="benefit-icon">
+          01
+        </div>
 
-        <h3>Project Review</h3>
+        <h3>
+          Railway Experience
+        </h3>
 
         <p>
-          We review the client requirements, available drawings,
-          specifications, operational constraints and project
-          objectives.
+          Practical understanding of railway construction,
+          maintenance, inspections and infrastructure operations.
         </p>
 
       </div>
 
-      <div class="process-card">
+      <div class="benefit-card">
 
-        <div class="process-number">02</div>
+        <div class="benefit-icon">
+          02
+        </div>
 
-        <h3>Site Assessment</h3>
+        <h3>
+          Integrated Services
+        </h3>
 
         <p>
-          Our team conducts site inspections, measurements, asset
-          verification and condition assessments where required.
+          Consulting, compliance, maintenance and construction
+          services managed through one coordinated approach.
         </p>
 
       </div>
 
-      <div class="process-card">
+      <div class="benefit-card">
 
-        <div class="process-number">03</div>
+        <div class="benefit-icon">
+          03
+        </div>
 
-        <h3>Engineering Planning</h3>
+        <h3>
+          Safety Focus
+        </h3>
 
         <p>
-          We develop the methodology, work sequence, safety
-          documentation, resource plan and quality requirements.
+          Safety planning, risk controls, regulatory support and
+          quality inspections are built into our service delivery.
         </p>
 
       </div>
 
-      <div class="process-card">
+      <div class="benefit-card">
 
-        <div class="process-number">04</div>
+        <div class="benefit-icon">
+          04
+        </div>
 
-        <h3>Project Delivery</h3>
-
-        <p>
-          Work is completed under controlled supervision with
-          inspections, testing, reporting and quality verification.
-        </p>
-
-      </div>
-
-      <div class="process-card">
-
-        <div class="process-number">05</div>
-
-        <h3>Close-Out Support</h3>
+        <h3>
+          Professional Reporting
+        </h3>
 
         <p>
-          Clients receive completion records, technical reports,
-          updated asset information and maintenance recommendations.
+          Clear engineering reports, asset records, defect registers,
+          photographs and practical maintenance recommendations.
         </p>
 
       </div>
@@ -1391,7 +1629,7 @@
   </section>
 
   <!-- ==================================================
-       CONTACT SECTION
+       CONTACT
        ================================================== -->
 
   <section class="section" id="contact">
@@ -1413,7 +1651,7 @@
           <p>
             Partner with Ubuntu Rail Solutions for reliable railway
             consulting, compliance, maintenance, rehabilitation,
-            construction and infrastructure management services.
+            construction and asset management services.
           </p>
 
           <p>
@@ -1432,7 +1670,9 @@
 
         <div class="contact-box">
 
-          <h3>Contact Details</h3>
+          <h3>
+            Contact Details
+          </h3>
 
           <div class="contact-detail">
 
@@ -1508,11 +1748,25 @@
 
         <h3>Services</h3>
 
-        <a href="#services">Infrastructure Consulting</a>
-        <a href="#services">Asset Management</a>
-        <a href="#services">Safety and Compliance</a>
-        <a href="#services">Maintenance and Rehabilitation</a>
-        <a href="#services">Construction and Civil Works</a>
+        <a href="./services.html">
+          Infrastructure Consulting
+        </a>
+
+        <a href="./services.html">
+          Asset Management
+        </a>
+
+        <a href="./services.html">
+          Safety and Compliance
+        </a>
+
+        <a href="./services.html">
+          Maintenance and Rehabilitation
+        </a>
+
+        <a href="./services.html">
+          Construction and Civil Works
+        </a>
 
       </div>
 
@@ -1520,10 +1774,21 @@
 
         <h3>Navigation</h3>
 
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="./index.html">
+          Home
+        </a>
+
+        <a href="./about.html">
+          About
+        </a>
+
+        <a href="./services.html">
+          Services
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
 
       </div>
 
@@ -1531,7 +1796,9 @@
 
         <h3>Contact</h3>
 
-        <p>Durban, South Africa</p>
+        <p>
+          Durban, South Africa
+        </p>
 
         <a href="tel:+27633660607">
           063 366 0607
@@ -1556,7 +1823,7 @@
   </footer>
 
   <!-- ==================================================
-       MOBILE NAVIGATION SCRIPT
+       MOBILE NAVIGATION
        ================================================== -->
 
   <script>
@@ -1600,5 +1867,9 @@
   </script>
 
 </body>
+
 </html>
-  
+    
+   
+
+ 
