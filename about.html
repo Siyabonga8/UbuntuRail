@@ -1,22 +1,113 @@
 
-      </a>
+    /* ==================================================
+       ABOUT
+       ================================================== */
 
-    </div>
+    .about-section {
+      background: var(--white);
+      padding: 100px 8%;
+    }
 
-  </section>
+    .about-wrapper {
+      max-width: 1400px;
+      margin: auto;
 
-</body>
-</html>
-<p>
-  Ubuntu Rail Solutions is a South African railway engineering and
-  infrastructure company specializing in railway construction,
-  maintenance, inspections, asset management, and infrastructure support
-  services for public and private rail networks.
-</p>
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 75px;
+      align-items: center;
+    }
 
-<p>
-  With more than 13 years of industry experience, we partner with our
-  clients to deliver safe, compliant, and sustainable railway solutions
-  that enhance asset performance, operational reliability, and long-term
-  infrastructure value.
-</p>
+    .about-image {
+      position: relative;
+    }
+
+    .about-image img {
+      width: 100%;
+      min-height: 540px;
+      max-height: 630px;
+      object-fit: cover;
+
+      border-radius: 16px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .experience-box {
+      position: absolute;
+      right: -25px;
+      bottom: 35px;
+
+      width: 220px;
+      padding: 28px;
+
+      background: var(--accent-orange);
+      color: var(--primary-navy);
+
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    .experience-box strong {
+      display: block;
+      font-size: 48px;
+      line-height: 1;
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+
+    .experience-box span {
+      display: block;
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+
+    .about-content h2 {
+      color: var(--secondary-navy);
+      font-size: clamp(34px, 4vw, 47px);
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    .about-content > p {
+      color: var(--secondary-text);
+      line-height: 1.9;
+      margin-bottom: 18px;
+    }
+
+    .about-points {
+      margin: 32px 0 35px;
+    }
+
+    .about-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 17px;
+      margin-bottom: 24px;
+    }
+
+    .about-icon {
+      min-width: 35px;
+      height: 35px;
+
+      display: grid;
+      place-items: center;
+
+      background: var(--accent-orange);
+      color: var(--primary-navy);
+
+      border-radius: 50%;
+      font-weight: 800;
+      margin-top: 3px;
+    }
+
+    .about-point h3 {
+      color: var(--secondary-navy);
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+
+    .about-point p {
+      color: var(--secondary-text);
+      font-size: 14px;
+      line-height: 1.7;
